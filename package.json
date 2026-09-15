@@ -1,0 +1,32 @@
+{
+  "name": "shopify-text-ticketing",
+  "version": "0.1.0",
+  "description": "Route Shopify store events from several stores into Text Ticketing teams",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "tsx watch --include config/stores.json --env-file=.env src/index.ts",
+    "start": "tsx --env-file=.env src/index.ts",
+    "setup:ticketing": "tsx --env-file=.env scripts/setup-ticketing.ts",
+    "register:webhooks": "tsx --env-file=.env scripts/register-webhooks.ts",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "lint": "biome check .",
+    "format": "biome format --write ."
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.14.0",
+    "hono": "^4.7.0",
+    "zod": "^3.24.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "@types/node": "^22.15.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.8.0",
+    "vitest": "^3.1.0"
+  }
+}

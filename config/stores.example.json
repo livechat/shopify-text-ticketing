@@ -1,0 +1,28 @@
+{
+  "stores": [
+    {
+      "key": "main",
+      "label": "Acme Main",
+      "shopDomain": "acme-main.myshopify.com",
+      "credentialsKey": "ACME",
+      "shippingTeam": "Orders & Shipping",
+      "vipThreshold": 1000
+    },
+    {
+      "key": "outlet",
+      "label": "Acme Outlet",
+      "shopDomain": "acme-outlet.myshopify.com",
+      "credentialsKey": "ACME",
+      "shippingTeam": "Orders & Shipping",
+      "vipThreshold": 500
+    },
+    {
+      "key": "eu",
+      "label": "Acme EU",
+      "shopDomain": "acme-eu.myshopify.com",
+      "credentialsKey": "ACME",
+      "shippingTeam": "Orders & Shipping EU",
+      "vipThreshold": 900
+    }
+  ]
+}
